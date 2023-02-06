@@ -1,6 +1,15 @@
 <template>
-    <h1>测试 vueUse 的鼠标坐标</h1>
-    <h3>Mouse: {{ 1 }} x {{ 2 }}</h3>
+    <n-date-picker v-model:value="timestamp" type="date" />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+
+export default defineComponent({
+    setup() {
+        return {
+            timestamp: ref(1183135260000),
+        };
+    },
+});
+</script>

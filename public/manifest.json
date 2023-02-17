@@ -3,12 +3,16 @@
     "description": "Base Level Extension",
     "version": "1.0",
     "manifest_version": 3,
+    "permissions": ["http://localhost/"],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'unsafe-inline'; object-src 'self';"
+    },
     "icons": {
         "16": "avatar.png",
         "32": "avatar.png",
         "48": "avatar.png",
         "128": "avatar.png"
-      },
+    },
     "action": {
         "default_popup": "index.html",
         "default_icon": "avatar.png"

@@ -7,11 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    IMdiAccountBox: typeof import('~icons/mdi/account-box')['default']
-    IMdiAlarmOff: typeof import('~icons/mdi/alarm-off')['default']
-    NButton: typeof import('naive-ui')['NButton']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    VanButton: typeof import('vant/es')['Button']
   }
 }
